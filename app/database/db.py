@@ -1,8 +1,11 @@
+from os import getenv
+from dotenv import load_dotenv
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-SQLALCHEMY_DATABASE_URL = "postgresql+asyncpg://root:root@localhost:5432/postgresql-product-fastapi"
+load_dotenv()
+SQLALCHEMY_DATABASE_URL = getenv("SQLALCHEMY_DATABASE_URL")
 
 engine = create_async_engine(SQLALCHEMY_DATABASE_URL)
 
