@@ -13,5 +13,17 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+  app:
+    build: .
+    container_name: product_api_app
+    environment:
+      SQLALCHEMY_DATABASE_URL: "postgresql+asyncpg://root:root@db-curso:5432/postgresql-product-fastapi"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db-curso
+    networks:
+      - default
+
 volumes:
   postgres_data:
