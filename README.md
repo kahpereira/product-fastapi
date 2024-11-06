@@ -19,6 +19,17 @@ A simple product CRUD (Create, Read, Update, Delete) API built with **FastAPI** 
 - Update product details.
 - Delete a product from the database.
 
+### Deploy and Testes:
+- Deployment on Render: [API Docs](https://product-fastapi.onrender.com/docs)
+
+The application has been deployed on Render using their Free Plan. If the application is idle without any incoming requests, it may experience a delay of 50 seconds or more when a new request is made.
+
+Below are images showing the tests that were performed.
+
+- ![image](https://github.com/user-attachments/assets/bac3ca5c-c5a4-437b-8f12-2509861379a2)
+- ![image](https://github.com/user-attachments/assets/e56c9abf-31fa-476e-ace6-288f745ed8ff)
+- ![image](https://github.com/user-attachments/assets/f3f06f39-3d8d-4530-8a6f-d5ca218d1724)
+
 ## Project Setup
 
 ### 1. Clone the Repository
